@@ -1,6 +1,6 @@
 {
   "name": "keycloak-request-token",
-  "version": "0.1.0",
+  "version": "0.2.0-dev",
   "description": "Simple utility to request a token from a Keycloak Server",
   "main": "index.js",
   "scripts": {
