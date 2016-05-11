@@ -30,7 +30,13 @@ function getToken(baseUrl, settings) {
         data.push(chunk);
       }).on('end', () => {
         try {
-          const parsedData = JSON.parse(Buffer.concat(data).toString());
+          const stringData = Buffer.concat(data).toString();
+          // need to look for the 404 since the return value is not really JSON but HTML
+          if (res.statusCode === 404) {
+            return reject(stringData);
+          }
+
+          const parsedData = JSON.parse(stringData);
           if (res.statusCode !== 200) {
             return reject(parsedData);
           }
