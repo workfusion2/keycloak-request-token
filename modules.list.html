@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Index</title>
+	<title>Documentation Modules</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -63,56 +63,88 @@
 		<div id="main">
 			
 
+	<h1 class="page-title">Modules</h1>
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
 	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
 	
 
 
 
-
-
-
-
-
-
-
-
-	
 	
 
+	
+
+	
+
+	
+</dl>
 
 
+        
+    
+    </div>
 
+    
 
-    <section class="readme-section">
-        <article><p><a href="https://travis-ci.org/bucharest-gold/keycloak-request-token"><img src="https://travis-ci.org/bucharest-gold/keycloak-request-token.svg?branch=master" alt="Build Status"></a>  <a href="https://coveralls.io/github/bucharest-gold/keycloak-request-token?branch=master"><img src="https://coveralls.io/repos/github/bucharest-gold/keycloak-request-token/badge.svg?branch=master" alt="Coverage Status"></a></p>
-<h2>keycloak-request-token</h2><p>A simple module to request an Access Token from a Keycloak Server</p>
-<h3>Example</h3><pre class="prettyprint source"><code>'use strict';
+    
 
-const tokenRequester = require('keycloak-request-token');
+    
 
-const baseUrl = 'http://127.0.0.1:8080/auth';
-const settings = {
-    username: 'admin',
-    password: 'admi',
-    grant_type: 'password',
-    client_id: 'admin-cli'
-};
+    
 
-tokenRequester(baseUrl, settings)
-  .then((token) => {
-    console.log(token);
-  }).catch((err) => {
-    console.log('err', err);
-  });</code></pre><h2>Development &amp; Testing</h2><p>To run the tests, you'll need to have a keycloak server running. No worries!
-This is all taken care of for you. Just run <code>./build/start-server.sh</code>.
-If you don't already have a server downloaded, this script will download one
-for you, start it, initialize the admin user, and then restart.</p>
-<p>Then just run the tests.</p>
-<pre class="prettyprint source"><code>make test</code></pre><p>To stop the server, run <code>./build/stop-server.sh</code>.</p></article>
-    </section>
+    
 
+    
 
+    
 
+    
+
+    
+</article>
+
+</section>
 
 
 
