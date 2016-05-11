@@ -7,6 +7,11 @@
 A simple module to request an Access Token from a Keycloak Server
 
 
+## API Documentation
+
+http://bucharest-gold.github.io/keycloak-request-token/
+
+
 ### Example
 
     'use strict';
