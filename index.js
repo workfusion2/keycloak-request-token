@@ -24,23 +24,23 @@ const tokenUrl = 'protocol/openid-connect/token';
   @instance
   @example
 
-  const tokenRequester = require('keycloak-request-token');
-  const baseUrl = 'http://127.0.0.1:8080/auth';
+  const tokenRequester = require('keycloak-request-token')
+  const baseUrl = 'http://127.0.0.1:8080/auth'
   const settings = {
       username: 'admin',
       password: 'admi',
       grant_type: 'password',
       client_id: 'admin-cli'
-  };
+  }
 
   tokenRequester(baseUrl, settings)
     .then((token) => {
-      console.log(token);
+      console.log(token)
     }).catch((err) => {
-      console.log('err', err);
-    });
+      console.log('err', err)
+    })
  */
-function getToken(baseUrl, settings) {
+function getToken (baseUrl, settings) {
   return new Promise((resolve, reject) => {
     settings = settings || {};
 
@@ -76,7 +76,7 @@ function getToken(baseUrl, settings) {
 
           const token = parsedData.access_token;
           resolve(token);
-        } catch(e) {
+        } catch (e) {
           reject(e);
         }
       });

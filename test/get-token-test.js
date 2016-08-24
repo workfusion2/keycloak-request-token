@@ -1,8 +1,7 @@
 'use strict';
 
-const test = require('tape'),
-  keycloakTokenRequest = require('../index');
-
+const test = require('tape');
+const keycloakTokenRequest = require('../index');
 
 test('keycloakTokenRequest should return a promise containing the access token', (t) => {
   const baseUrl = 'http://127.0.0.1:8080/auth';
