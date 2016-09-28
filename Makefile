@@ -1,5 +1,5 @@
 ci: lint
-	npm run coveralls
+	npm run coverage
 
 test: lint
 	npm test
