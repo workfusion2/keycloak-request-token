@@ -7,8 +7,7 @@
     "test": "tape test/*-test.js",
     "lint": "eslint index.js example.js test/*.js",
     "prepublish": "./node_modules/nsp/bin/nsp check",
-    "coverage": "./node_modules/.bin/istanbul cover tape -- test/*.js",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage": "istanbul cover tape test/*.js",
     "docs": "./node_modules/.bin/jsdoc --verbose -d docs -t ./node_modules/ink-docstrap/template -R README.md index.js"
   },
   "keywords": [
@@ -32,7 +31,6 @@
   "bugs": "https://github.com/bucharest-gold/keycloak-request-token/issues",
   "license": "Apache-2.0",
   "devDependencies": {
-    "coveralls": "^2.11.9",
     "eslint": "^3.3.1",
     "eslint-config-semistandard": "^7.0.0-beta.0",
     "eslint-config-standard": "^6.0.0",
