@@ -1,18 +1,27 @@
-[![Build Status](https://travis-ci.org/bucharest-gold/keycloak-request-token.svg?branch=master)](https://travis-ci.org/bucharest-gold/keycloak-request-token)  [![Coverage Status](https://coveralls.io/repos/github/bucharest-gold/keycloak-request-token/badge.svg?branch=master)](https://coveralls.io/github/bucharest-gold/keycloak-request-token?branch=master)
-
-
 ## keycloak-request-token
 
+[![Coverage Status](https://coveralls.io/repos/github/bucharest-gold/keycloak-request-token/badge.svg)](https://coveralls.io/github/bucharest-gold/keycloak-request-token)
+[![Build Status](https://travis-ci.org/bucharest-gold/keycloak-request-token.svg?branch=master)](https://travis-ci.org/bucharest-gold/keycloak-request-token)
+[![Known Vulnerabilities](https://snyk.io/test/npm/keycloak-request-token/badge.svg)](https://snyk.io/test/npm/keycloak-request-token)
+[![dependencies Status](https://david-dm.org/bucharest-gold/keycloak-request-token/status.svg)](https://david-dm.org/bucharest-gold/keycloak-request-token)
 
-A simple module to request an Access Token from a Keycloak Server
+[![NPM](https://nodei.co/npm/keycloak-request-token.png)](https://npmjs.org/package/keycloak-request-token)
 
+A simple module to request an Access Token from a Keycloak Server.
 
-## API Documentation
+|                 | Project Info  |
+| --------------- | ------------- |
+| License:        | Apache-2.0 |
+| Build:          | make |
+| Documentation:  | http://bucharest-gold.github.io/keycloak-request-token/ |
+| Issue tracker:  | https://github.com/bucharest-gold/keycloak-request-token/issues |
+| Engines:        | Node.js 4.x, 6.x, 7.x |
 
-http://bucharest-gold.github.io/keycloak-request-token/
+## Installation
 
+    npm install keycloak-request-token -S
 
-### Example
+## Usage
 
     'use strict';
 
@@ -33,16 +42,6 @@ http://bucharest-gold.github.io/keycloak-request-token/
         console.log('err', err);
       });
 
+## Contributing
 
-## Development & Testing
-
-To run the tests, you'll need to have a keycloak server running. No worries!
-This is all taken care of for you. Just run `./scripts/start-server.sh`.
-If you don't already have a server downloaded, this script will download one
-for you, start it, initialize the admin user, and then restart.
-
-Then just run the tests.
-
-    make test
-
-To stop the server, run `./scripts/stop-server.sh`.
+Please read the [contributing guide](./CONTRIBUTING.md)

@@ -4,7 +4,7 @@
   "description": "Simple utility to request a token from a Keycloak Server",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*-test.js",
+    "test": "tape test/*-test.js | tap-spec",
     "lint": "eslint index.js example.js test/*.js",
     "prepublish": "./node_modules/nsp/bin/nsp check",
     "coverage": "istanbul cover tape test/*.js",
@@ -31,16 +31,17 @@
   "bugs": "https://github.com/bucharest-gold/keycloak-request-token/issues",
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^3.3.1",
-    "eslint-config-semistandard": "^7.0.0-beta.0",
-    "eslint-config-standard": "^6.0.0",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-react": "^6.1.2",
-    "eslint-plugin-standard": "^2.0.0",
-    "ink-docstrap": "^1.1.4",
-    "istanbul": "^0.4.3",
-    "jsdoc": "^3.4.0",
-    "nsp": "^2.3.0",
-    "tape": "^4.5.1"
+    "eslint": "^3.9.1",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.1",
+    "eslint-plugin-react": "^6.5.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "ink-docstrap": "^1.3.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.4.2",
+    "nsp": "^2.6.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
   }
 }

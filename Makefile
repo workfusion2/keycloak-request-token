@@ -1,8 +1,8 @@
-ci: lint
-	npm run coverage
-
 test: lint
 	npm test
+
+ci: lint
+	npm run coverage
 
 lint: node_modules
 	npm run lint
