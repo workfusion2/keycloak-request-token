@@ -15,7 +15,7 @@ A simple module to request an Access Token from a Keycloak Server.
 | Build:          | make |
 | Documentation:  | http://bucharest-gold.github.io/keycloak-request-token/ |
 | Issue tracker:  | https://github.com/bucharest-gold/keycloak-request-token/issues |
-| Engines:        | Node.js 4.x, 6.x, 7.x |
+| Engines:        | Node.js 4.x, 6.x, 8.x |
 
 ## Installation
 
