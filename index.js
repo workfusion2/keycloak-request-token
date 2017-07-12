@@ -74,7 +74,7 @@ function getToken (baseUrl, settings) {
             return reject(parsedData);
           }
 
-          var token = [parsedData.id_token, parsedData.refresh_token]
+          var token = [parsedData.id_token, parsedData.refresh_token, parsedData.access_token]
           resolve(token);
         } catch (e) {
           reject(e);
