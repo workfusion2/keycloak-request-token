@@ -74,7 +74,7 @@ function getToken (baseUrl, settings) {
             return reject(parsedData);
           }
 
-          const token = parsedData.refresh_token
+          const token = parsedData
           resolve(token);
         } catch (e) {
           reject(e);
